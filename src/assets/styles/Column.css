@@ -27,6 +27,8 @@
 }
 
 .column-count {
+  padding-top: 1px;
+  margin-left: 7px;
   color: #6b7280;
   font-size: 0.875rem;
 }
