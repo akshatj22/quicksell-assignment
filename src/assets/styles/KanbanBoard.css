@@ -1,0 +1,19 @@
+.kanban-container {
+  min-height: 100vh;
+  background-color: #f4f6fa;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.board-container {
+  padding: 16px;
+  overflow-x: auto;
+  height: 89vh;
+  -webkit-overflow-scrolling: touch;
+}
+
+.columns-container {
+  display: flex;
+  gap: 16px;
+  min-width: min-content;
+}

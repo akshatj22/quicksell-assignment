@@ -1,0 +1,86 @@
+@media (max-width: 768px) {
+  .board-container {
+    padding: 12px;
+  }
+
+  .columns-container {
+    gap: 12px;
+  }
+
+  .column {
+    min-width: 280px;
+    padding: 12px;
+  }
+
+  .ticket-card {
+    padding: 12px;
+  }
+
+  .dropdown {
+    width: 90vw;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding: 12px;
+  }
+
+  .display-button {
+    padding: 6px 10px;
+  }
+
+  .columns-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column-title h2 {
+    font-size: 0.875rem;
+  }
+
+  .ticket-title h3 {
+    font-size: 0.813rem;
+  }
+
+  .tag {
+    padding: 2px 6px;
+  }
+}
+
+@media (hover: none) {
+  .board-container {
+    cursor: grab;
+  }
+
+  .board-container:active {
+    cursor: grabbing;
+  }
+
+  .action-button {
+    padding: 8px;
+  }
+}
+
+@media print {
+  .kanban-container {
+    background-color: white;
+  }
+
+  .header,
+  .action-button {
+    display: none;
+  }
+
+  .columns-container {
+    display: block;
+  }
+
+  .column {
+    page-break-inside: avoid;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: none;
+  }
+}

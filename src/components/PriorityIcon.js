@@ -1,24 +1,27 @@
-import React from 'react'
-import './styles.css';
-import dot from '../assets/No-priority.svg';
-import urgent from '../assets/SVG - Urgent Priority grey.svg'
-import high from '../assets/Img - High Priority.svg';
-import medium from '../assets/Img - Medium Priority.svg';
-import low from '../assets/Img - Low Priority.svg';
+import "../assets/styles/PriorityIcon.css";
+import "../assets/styles/Media-queries.css";
 
-function PriorityIcon({priority}) {
-    switch (priority) {
-        case 4:
-          return  <img src={urgent} alt="urgent" />;
-        case 3:
-          return  <img src={high} alt="high" />;
-        case 2:
-          return  <img src={medium} alt="medium" />;
-        case 1:
-          return   <img src={low} alt="low" />;
-        default:
-          return  <img src={dot} alt="No-priority" />;
-      }
-};
+import React from "react";
 
-export default PriorityIcon
+import SVGDot from "../assets/icons/no-priority.svg";
+import SVGUrgent from "../assets/icons/urgent-priority-color.svg";
+import SVGHigh from "../assets/icons/high-priority.svg";
+import SVGMedium from "../assets/icons/medium-priority.svg";
+import SVGLow from "../assets/icons/low-priority.svg";
+
+function PriorityIcon({ priority }) {
+  switch (priority) {
+    case 4:
+      return <img src={SVGUrgent} alt="urgent" />;
+    case 3:
+      return <img src={SVGHigh} alt="high" />;
+    case 2:
+      return <img src={SVGMedium} alt="medium" />;
+    case 1:
+      return <img src={SVGLow} alt="low" />;
+    default:
+      return <img src={SVGDot} alt="No-priority" />;
+  }
+}
+
+export default PriorityIcon;

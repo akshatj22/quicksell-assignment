@@ -1,45 +1,45 @@
 import { Signal } from "lucide-react";
 import { UserCircle2 } from "lucide-react";
 
-import todo from "../assets/To-do.svg";
-import inProgress from "../assets/in-progress.svg";
-import done from "../assets/Done.svg";
-import canceled from "../assets/Cancelled.svg";
-import backlog from "../assets/Backlog.svg";
-import dot from "../assets/No-priority.svg";
-import urgent from "../assets/SVG - Urgent Priority colour.svg";
-import high from "../assets/Img - High Priority.svg";
-import medium from "../assets/Img - Medium Priority.svg";
-import low from "../assets/Img - Low Priority.svg";
+import SVGTodo from "../assets/icons/to-do.svg";
+import SVGInProgress from "../assets/icons/in-progress.svg";
+import SVGDone from "../assets/icons/done.svg";
+import SVGCanceled from "../assets/icons/cancelled.svg";
+import SVGBacklog from "../assets/icons/backlog.svg";
+import SVGDot from "../assets/icons/no-priority.svg";
+import SVGUrgent from "../assets/icons/urgent-priority-color.svg";
+import SVGHigh from "../assets/icons/high-priority.svg";
+import SVGMedium from "../assets/icons/medium-priority.svg";
+import SVGLow from "../assets/icons/low-priority.svg";
 
 const GroupIcon = ({ grouping, title }) => {
   if (grouping === "status") {
     switch (title.toLowerCase()) {
       case "todo":
-        return <img src={todo} alt="todo" />;
+        return <img src={SVGTodo} alt="todo" />;
       case "in progress":
-        return <img src={inProgress} alt="inProgress" />;
+        return <img src={SVGInProgress} alt="inProgress" />;
       case "done":
-        return <img src={done} alt="done" />;
+        return <img src={SVGDone} alt="done" />;
       case "cancelled":
-        return <img src={canceled} alt="canceled" />;
+        return <img src={SVGCanceled} alt="canceled" />;
       default:
-        return <img src={backlog} alt="backlog" />;
+        return <img src={SVGBacklog} alt="backlog" />;
     }
   }
 
   if (grouping === "priority") {
     switch (title.toLowerCase()) {
       case "no priority":
-        return <img src={dot} alt="dot" />;
+        return <img src={SVGDot} alt="dot" />;
       case "urgent":
-        return <img src={urgent} alt="urgent" />;
+        return <img src={SVGUrgent} alt="urgent" />;
       case "high":
-        return <img src={high} alt="high" />;
+        return <img src={SVGHigh} alt="high" />;
       case "medium":
-        return <img src={medium} alt="medium" />;
+        return <img src={SVGMedium} alt="medium" />;
       case "low":
-        return <img src={low} alt="low" />;
+        return <img src={SVGLow} alt="low" />;
       default:
         return <Signal />;
     }

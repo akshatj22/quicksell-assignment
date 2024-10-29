@@ -1,8 +1,12 @@
+import "../assets/styles/Global.css";
+import "../assets/styles/KanbanBoard.css";
+import "../assets/styles/Media-queries.css";
+
 import React from "react";
 import { useState, useEffect } from "react";
+
 import Column from "./Column";
 import Header from "./Header";
-import "./styles.css";
 
 function KanbanBoard() {
   const [tickets, setTickets] = useState([]);

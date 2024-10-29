@@ -1,0 +1,26 @@
+.status-icon {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid;
+  flex-shrink: 0;
+}
+
+.status-todo {
+  border-color: #6b7280;
+}
+
+.status-in-progress {
+  border-color: #fbbf24;
+  background-color: #fbbf24;
+}
+
+.status-done {
+  border-color: #3b82f6;
+  background-color: #3b82f6;
+}
+
+.status-canceled {
+  border-color: #ef4444;
+  background-color: #ef4444;
+}

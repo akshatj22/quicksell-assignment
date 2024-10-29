@@ -1,0 +1,20 @@
+.priority-icon {
+  display: flex;
+  align-items: center;
+}
+
+.priority-urgent {
+  color: #ef4444;
+}
+
+.priority-high {
+  color: #f59e0b;
+}
+
+.priority-medium {
+  color: #10b981;
+}
+
+.priority-low {
+  color: #6b7280;
+}

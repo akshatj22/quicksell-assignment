@@ -1,23 +1,27 @@
-import React from 'react';
-import todo from '../assets/To-do.svg';
-import inProgress from '../assets/in-progress.svg';
-import done from '../assets/Done.svg';
-import canceled from '../assets/Cancelled.svg';
-import backlog from '../assets/Backlog.svg';
+import "../assets/styles/StatusIcon.css";
+import "../assets/styles/Media-queries.css";
 
-function StatusIcon({status}) {
+import React from "react";
+
+import SVGTodo from "../assets/icons/to-do.svg";
+import SVGInProgress from "../assets/icons/in-progress.svg";
+import SVGDone from "../assets/icons/done.svg";
+import SVGCanceled from "../assets/icons/cancelled.svg";
+import SVGBacklog from "../assets/icons/backlog.svg";
+
+function StatusIcon({ status }) {
   switch (status.toLowerCase()) {
-    case 'todo':
-      return    <img src={todo} alt="todo" />;
-    case 'in progress':
-      return    <img src={inProgress} alt="inProgress" />;
-    case 'done':
-      return    <img src={done} alt="done" />;
-    case 'canceled':
-      return  <img src={canceled} alt="canceled" />;
+    case "todo":
+      return <img src={SVGTodo} alt="todo" />;
+    case "in progress":
+      return <img src={SVGInProgress} alt="inProgress" />;
+    case "done":
+      return <img src={SVGDone} alt="done" />;
+    case "canceled":
+      return <img src={SVGCanceled} alt="canceled" />;
     default:
-      return  <img src={backlog} alt="backlog" />;
+      return <img src={SVGBacklog} alt="backlog" />;
   }
 }
 
-export default StatusIcon
+export default StatusIcon;

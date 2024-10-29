@@ -1,11 +1,12 @@
-import "./styles.css";
+import "../assets/styles/Column.css";
+import "../assets/styles/Media-queries.css";
 
 import React from "react";
 import Card from "./Card";
 import GroupIcon from "./GroupIcon";
 
-import SVGAdd from "../assets/add.svg";
-import SVGDot from "../assets/3dot.svg";
+import SVGAdd from "../assets/icons/add.svg";
+import SVGDot from "../assets/icons/threedot.svg";
 
 function Column({ title, tickets, users, grouping }) {
   return (
